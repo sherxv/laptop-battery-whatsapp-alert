@@ -1,0 +1,17 @@
+# Private config — contains your phone number
+config.py
+
+# pywhatkit auto-generated file
+PyWhatKit_DB.txt
+
+# Activity log
+assistant.log
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+.env/
