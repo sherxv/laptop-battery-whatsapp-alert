@@ -157,6 +157,7 @@ def check_meet_reminders() -> None:
 
 
 # Main 
+def main() -> None:
     log.info("🚀 Personal Productivity Assistant started.")
     log.info(f"   Battery threshold    : {BATTERY_THRESHOLD}%")
     log.info(f"   Battery check every  : {CHECK_INTERVAL_MIN} min")
@@ -182,4 +183,4 @@ if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
-        log.info("Stopped by user.")
+        log.info("👋 Stopped by user.")
