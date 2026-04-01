@@ -9,7 +9,7 @@
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
 
-**A smart Python productivity assistant that monitors your laptop battery and sends instant WhatsApp alerts — plus Google Meet reminders, so you never miss a meeting or lose power during deadlines.**
+**A Python-based productivity assistant that monitors your laptop battery and sends instant WhatsApp alerts plus Google Meet reminders, so you never miss a meeting or lose power during deadlines.**
 
 </div>
 
@@ -28,7 +28,7 @@
 
 ---
 
-## ✨ Features
+## Features
 
 | Feature | Description |
 |---|---|
@@ -42,13 +42,13 @@
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 laptop-battery-whatsapp-alert/
 │
 ├── main.py                 # Core script — run this to start
-├── config.py               # Your private settings (gitignored ⛔)
+├── config.py               # Your private settings (gitignored)
 ├── config.example.py       # Setup template — copy this to config.py
 ├── requirements.txt        # Python dependencies
 ├── .gitignore              # Keeps your private data off GitHub
@@ -58,7 +58,7 @@ laptop-battery-whatsapp-alert/
 
 ---
 
-## ⚙️ Setup & Installation
+## Setup & Installation
 
 ### Prerequisites
 - Python 3.10 or higher
@@ -97,7 +97,7 @@ MEET_SCHEDULE = [
 
 ### 4. Log in to WhatsApp Web
 
-Open [web.whatsapp.com](https://web.whatsapp.com) in your browser and scan the QR code. Keep the tab open while the script runs.
+Open [web.whatsapp.com](https://web.whatsapp.com) in your browser and log in. Keep the tab open while the script runs.
 
 ### 5. Run the assistant
 
@@ -107,7 +107,7 @@ python main.py
 
 ---
 
-## 🛠️ Configuration Options
+## Configuration Options
 
 Open `config.py` to customize these settings:
 
@@ -122,7 +122,7 @@ Open `config.py` to customize these settings:
 
 ---
 
-## 📲 Sample WhatsApp Messages
+## Sample WhatsApp Messages
 
 **Battery Alert:**
 ```
@@ -147,7 +147,7 @@ Get ready to join! 💻
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 | Library | Purpose |
 |---|---|
@@ -159,7 +159,7 @@ Get ready to join! 💻
 
 ---
 
-## 🚀 Run in Background
+## Run in Background
 
 Keep the assistant running silently without a terminal window:
 
@@ -175,7 +175,7 @@ nohup python main.py &
 
 ---
 
-## 🔒 Security
+## Security
 
 - `config.py` is listed in `.gitignore` and **never uploaded to GitHub**
 - Your phone number stays private on your local machine only
@@ -183,7 +183,7 @@ nohup python main.py &
 
 ---
 
-## 🐛 Common Issues
+##  Common Issues
 
 | Error | Fix |
 |---|---|
@@ -194,9 +194,9 @@ nohup python main.py &
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
-Pull requests are welcome! If you have ideas for new features — Telegram support, email alerts, calendar sync, auto-startup — feel free to open an issue.
+Pull requests are welcome! If you have ideas for new features, Telegram support, email alerts, calendar sync, auto-startup - feel free to open an issue.
 
 1. Fork the repo
 2. Create a new branch (`git checkout -b feature/your-feature`)
@@ -214,7 +214,7 @@ This project is licensed under the [MIT License](LICENSE) — free to use, modif
 
 <div align="center">
 
-Built with 🐍 Python &nbsp;|&nbsp; Made by [sherxv](https://github.com/sherxv)
+Built with 🐍 Python &nbsp;|&nbsp; Made by [Shruti Priya](https://github.com/sherxv)
 
 *Perfect for students, developers, and anyone who forgets to charge their laptop!* ⚡
 

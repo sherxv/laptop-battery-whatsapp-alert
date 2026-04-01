@@ -1,11 +1,11 @@
-# ── Your WhatsApp Number ───────────────────────────────────────────────────────
-PHONE_NUMBER = "+91XXXXXXXXXX"          # e.g. "+919876543210"
+#  Your WhatsApp Number 
+PHONE_NUMBER = "+91XXXXXXXXXX"          # e.g. +919876543210
  
-# ── Battery Settings ───────────────────────────────────────────────────────────
+# Battery Settings
 BATTERY_THRESHOLD      = 30            # Alert when battery is AT or BELOW this %
 CHECK_INTERVAL_MIN     = 10            # Check battery every N minutes
  
-# ── Google Meet Schedule ───────────────────────────────────────────────────────
+# Google Meet Schedule
 # Format: "YYYY-MM-DD HH:MM"  (24-hour clock)
 MEET_SCHEDULE = [
     "2026-04-01 10:00"
@@ -14,7 +14,7 @@ MEET_SCHEDULE = [
  
 REMINDER_MINUTES_BEFORE = 5            # Send reminder this many minutes before meet
  
-# ── pywhatkit Settings ─────────────────────────────────────────────────────────
-WAIT_TIME  = 25               # Seconds to wait for WhatsApp Web to load
+# pywhatkit Settings
+WAIT_TIME  = 20               # Seconds to wait for WhatsApp Web to load
 TAB_CLOSE  = True                      # Close browser tab after sending
 CLOSE_TIME = 5                         # Seconds before closing the tab

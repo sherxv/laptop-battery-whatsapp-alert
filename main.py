@@ -1,7 +1,7 @@
 """
-      🔋 Personal Productivity Assistant                 
-     Battery Monitor + Google Meet Reminders                
-  Free forever — uses WhatsApp Web via pywhatkit     
+ Personal Productivity Assistant                 
+ Battery Monitor + Google Meet Reminders                
+ uses WhatsApp Web via pywhatkit     
 
 """
 import sys
@@ -26,7 +26,7 @@ from config import (
     CLOSE_TIME,
 )
 
-# ── Logging Setup ──────────────────────────────────────────────────────────────
+# Logging Setup 
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s  [%(levelname)s]  %(message)s",
@@ -38,13 +38,13 @@ logging.basicConfig(
 )
 log = logging.getLogger(__name__)
 
-# ── State ──────────────────────────────────────────────────────────────────────
+# State 
 _last_battery_alert: float | None = None
 _is_charging: bool = False
 _meets_notified: set = set()
 
 
-# ── Helpers ────────────────────────────────────────────────────────────────────
+#  Helpers 
 def send_whatsapp(msg: str, label: str) -> None:
     """Send a WhatsApp message and force-press Enter to actually send it."""
     try:
@@ -56,7 +56,7 @@ def send_whatsapp(msg: str, label: str) -> None:
         log.error(f"❌ Failed to send {label}: {e}")
 
 
-# ── Battery ────────────────────────────────────────────────────────────────────
+# Battery 
 def get_battery_status() -> tuple[float, bool] | tuple[None, None]:
     battery = psutil.sensors_battery()
     if battery is None:
@@ -106,7 +106,7 @@ def check_battery() -> None:
             log.info("🔕 Alert already sent. Waiting for 3% more drop or plug-in.")
 
 
-# ── Meet Reminders ─────────────────────────────────────────────────────────────
+# Meet Reminders
 def send_meet_reminder(meet_time_str: str) -> None:
     now_str = datetime.now().strftime("%I:%M %p")
     msg = (
@@ -156,8 +156,7 @@ def check_meet_reminders() -> None:
             log.error(f"❌ Invalid meet time format: '{meet_str}' — use 'YYYY-MM-DD HH:MM'")
 
 
-# ── Main ───────────────────────────────────────────────────────────────────────
-def main() -> None:
+# Main 
     log.info("🚀 Personal Productivity Assistant started.")
     log.info(f"   Battery threshold    : {BATTERY_THRESHOLD}%")
     log.info(f"   Battery check every  : {CHECK_INTERVAL_MIN} min")
@@ -183,4 +182,4 @@ if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
-        log.info("👋 Stopped by user.")
+        log.info("Stopped by user.")
